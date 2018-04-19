@@ -1,26 +1,39 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/meituan/meituan"
   ],
   "tabBar": {
+    "selectedColor": "red",
     "list": [
       {
         "pagePath": "pages/index/index",
+        "iconPath": "imgs/tabBar_icon01.png",
+        "selectedIconPath": "imgs/tabBar_icon02.png",
         "text": "首页"
       },
       {
         "pagePath": "pages/logs/logs",
+        "iconPath": "imgs/tabBar_icon01.png",
+        "selectedIconPath": "imgs/tabBar_icon02.png",
         "text": "日志"
+      },
+      {
+        "pagePath": "pages/meituan/meituan",
+        "iconPath": "imgs/tabBar_icon01.png",
+        "selectedIconPath": "imgs/tabBar_icon02.png",
+        "text": "美团"
       }
     ]
   },
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "dark",
     "navigationBarBackgroundColor": "#000",
     "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"white",
-    "backgroundColor": "#999"
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#999",
+    "enablePullDownRefresh": true
   },
   "networkTimeout": {
     "request": 60000
